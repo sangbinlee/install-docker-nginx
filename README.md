@@ -41,7 +41,25 @@ install-docker-nginx
 # 
 # 
 # 
-# 
+# ./gradlew clean build
+
+
+![image](https://github.com/sangbinlee/install-docker-nginx/assets/4024414/384490b2-8715-4e75-9db5-451795ab5669)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # 
 
 
