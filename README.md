@@ -168,14 +168,310 @@ install-docker-nginx
 
 
 # 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
+#  vue add router
+
+
+
+
+    
+    sangbinlee9@master:~/fastapi-vue/services/frontend$  vue add router
+     WARN  There are uncommitted changes in the current repository, it's recommended to commit or stash them first.
+    ? Still proceed? Yes
+    
+    📦  Installing @vue/cli-plugin-router...
+    
+    
+    up to date, audited 973 packages in 4s
+    
+    109 packages are looking for funding
+      run `npm fund` for details
+    
+    4 moderate severity vulnerabilities
+    
+    To address all issues (including breaking changes), run:
+      npm audit fix --force
+    
+    Run `npm audit` for details.
+    ✔  Successfully installed plugin: @vue/cli-plugin-router
+    
+    ? Use history mode for router? (Requires proper server setup for index fallback in production) Yes
+    
+    🚀  Invoking generator for @vue/cli-plugin-router...
+    📦  Installing additional dependencies...
+    
+    
+    added 2 packages, and audited 975 packages in 5s
+    
+    110 packages are looking for funding
+      run `npm fund` for details
+    
+    4 moderate severity vulnerabilities
+    
+    To address all issues (including breaking changes), run:
+      npm audit fix --force
+    
+    Run `npm audit` for details.
+    ⚓  Running completion hooks...
+    
+    ✔  Successfully invoked generator for plugin: @vue/cli-plugin-router
+    sangbinlee9@master:~/fastapi-vue/services/frontend$
+
+
+
+
+
+
+
+
+
+
+
+
+
+# npm install --save axios@1.2.1 vuex@4.1.0 bootstrap@5.2.3
+
+    
+    sangbinlee9@master:~/fastapi-vue/services/frontend$
+    sangbinlee9@master:~/fastapi-vue/services/frontend$ npm install --save axios@1.2.1 vuex@4.1.0 bootstrap@5.2.3
+    
+    added 9 packages, and audited 984 packages in 7s
+    
+    112 packages are looking for funding
+      run `npm fund` for details
+    
+    5 moderate severity vulnerabilities
+    
+    To address issues that do not require attention, run:
+      npm audit fix
+    
+    To address all issues (including breaking changes), run:
+      npm audit fix --force
+    
+    Run `npm audit` for details.
+    sangbinlee9@master:~/fastapi-vue/services/frontend$
+    
+
+
+
+
+
+# npm run serve
+
+
+    
+    
+    sangbinlee9@master:~/fastapi-vue/services/frontend$ npm run serve
+    
+    > frontend@0.1.0 serve
+    > vue-cli-service serve
+    
+     INFO  Starting development server...
+     ERROR  Error: @vitejs/plugin-vue requires vue (>=3.2.13) or @vue/compiler-sfc to be present in the dependency tree.
+    Error: @vitejs/plugin-vue requires vue (>=3.2.13) or @vue/compiler-sfc to be present in the dependency tree.
+        at Object.<anonymous> (/home/sangbinlee9/fastapi-vue/services/frontend/node_modules/vue-loader/dist/compiler.js:14:15)
+        at Module._compile (internal/modules/cjs/loader.js:999:30)
+        at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+        at Module.load (internal/modules/cjs/loader.js:863:32)
+        at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+        at Module.require (internal/modules/cjs/loader.js:887:19)
+        at require (internal/modules/cjs/helpers.js:74:18)
+        at Object.<anonymous> (/home/sangbinlee9/fastapi-vue/services/frontend/node_modules/vue-loader/dist/index.js:29:20)
+        at Module._compile (internal/modules/cjs/loader.js:999:30)
+        at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+        at Module.load (internal/modules/cjs/loader.js:863:32)
+        at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+        at Module.require (internal/modules/cjs/loader.js:887:19)
+        at require (internal/modules/cjs/helpers.js:74:18)
+        at /home/sangbinlee9/fastapi-vue/services/frontend/node_modules/@vue/cli-service/lib/config/base.js:154:16
+        at /home/sangbinlee9/fastapi-vue/services/frontend/node_modules/@vue/cli-service/lib/Service.js:268:40
+        at Array.forEach (<anonymous>)
+        at Service.resolveChainableWebpackConfig (/home/sangbinlee9/fastapi-vue/services/frontend/node_modules/@vue/cli-service/lib/Service.js:268:26)
+        at Service.resolveWebpackConfig (/home/sangbinlee9/fastapi-vue/services/frontend/node_modules/@vue/cli-service/lib/Service.js:272:48)
+        at PluginAPI.resolveWebpackConfig (/home/sangbinlee9/fastapi-vue/services/frontend/node_modules/@vue/cli-service/lib/PluginAPI.js:132:25)
+        at serve (/home/sangbinlee9/fastapi-vue/services/frontend/node_modules/@vue/cli-service/lib/commands/serve.js:79:31)
+        at Service.run (/home/sangbinlee9/fastapi-vue/services/frontend/node_modules/@vue/cli-service/lib/Service.js:262:12)
+        at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    sangbinlee9@master:~/fastapi-vue/services/frontend$
+
+
+
+
+
+
+# npm i vue@3.2.26
+
+
+#  npm run serve
+    sangbinlee9@master:~/fastapi-vue/services/frontend$ npm run serve
+    
+    > frontend@0.1.0 serve
+    > vue-cli-service serve
+    
+     INFO  Starting development server...
+    
+    
+     DONE  Compiled successfully in 5444ms                                                                                9:30:25 PM
+    
+    
+      App running at:
+      - Local:   http://localhost:8081/
+      - Network: http://192.168.0.65:8081/
+    
+      Note that the development build is not optimized.
+      To create a production build, run npm run build.
+
+
+
+![image](https://github.com/sangbinlee/install-docker-nginx/assets/4024414/1ac7b5b2-12fb-4ef2-bfa8-5c591895fd93)
+
+
+
+
+#  vi docker-compose.yml
+    sangbinlee9@master:~/fastapi-vue$ vi docker-compose.yml
+
+    
+    version: '3.8'
+    
+    services:
+    
+      backend:
+        build: ./services/backend
+        ports:
+          - 5000:5000
+        volumes:
+          - ./services/backend:/app
+        command: uvicorn src.main:app --reload --host 0.0.0.0 --port 5000
+    
+      frontend:
+        build: ./services/frontend
+        volumes:
+          - './services/frontend:/app'
+          - '/app/node_modules'
+        ports:
+          - 8081:8081
+
+
+
+
+#  docker compose up -d --build
+
+    sangbinlee9@master:~/fastapi-vue$ docker compose up -d --build
+
+
+
+
+    
+    /
+    sangbinlee9@master:~/fastapi-vue$ vi docker-compose.yml
+    sangbinlee9@master:~/fastapi-vue$ docker compose up -d --build
+    [+] Building 84.5s (23/23) FINISHED                                                                              docker:default
+     => [backend internal] load build definition from Dockerfile                                                               0.0s
+     => => transferring dockerfile: 249B                                                                                       0.0s
+     => [backend internal] load .dockerignore                                                                                  0.0s
+     => => transferring context: 2B                                                                                            0.0s
+     => [frontend internal] load build definition from Dockerfile                                                              0.1s
+     => => transferring dockerfile: 239B                                                                                       0.0s
+     => [frontend internal] load .dockerignore                                                                                 0.1s
+     => => transferring context: 2B                                                                                            0.0s
+     => [backend internal] load metadata for docker.io/library/python:3.11-buster                                              1.6s
+     => [frontend internal] load metadata for docker.io/library/node:lts-alpine                                                2.5s
+     => [backend internal] load build context                                                                                  0.0s
+     => => transferring context: 182B                                                                                          0.0s
+     => [backend 1/7] FROM docker.io/library/python:3.11-buster@sha256:3a19b4d6ce4402d11bb19aa11416e4a262a60a57707a5cda5787a8  0.0s
+     => CACHED [backend 2/7] RUN mkdir app                                                                                     0.0s
+     => CACHED [backend 3/7] WORKDIR /app                                                                                      0.0s
+     => CACHED [backend 4/7] COPY requirements.txt .                                                                           0.0s
+     => CACHED [backend 5/7] RUN pip install --upgrade pip                                                                     0.0s
+     => CACHED [backend 6/7] RUN pip install -r requirements.txt                                                               0.0s
+     => CACHED [backend 7/7] COPY src/ .                                                                                       0.0s
+     => [backend] exporting to image                                                                                           0.0s
+     => => exporting layers                                                                                                    0.0s
+     => => writing image sha256:f05696284097a9bb6254a76ebc99d36187d596d0d3b70f8c0a8afaec80b145d7                               0.0s
+     => => naming to docker.io/library/fastapi-vue-backend                                                                     0.0s
+     => [frontend 1/6] FROM docker.io/library/node:lts-alpine@sha256:8e015de364a2eb2ed7c52a558e9f716dcb615560ffd132234087c10c  7.1s
+     => => resolve docker.io/library/node:lts-alpine@sha256:8e015de364a2eb2ed7c52a558e9f716dcb615560ffd132234087c10ccc1f2c63   0.0s
+     => => sha256:3a617f439a70c99c88b4f6179a9c23bdc9ab21df2ad7354aae079c52caa5e3a7 6.78kB / 6.78kB                             0.0s
+     => => sha256:277539faec26519b55eba0f461b4c12fe4921eb031e80cef0a09b48592cb3eb8 49.81MB / 49.81MB                           4.9s
+     => => sha256:2e04e6e2ab16e4be7fa7d604d5ab103338c4620ae546e46a6232bb40e718529c 2.34MB / 2.34MB                             0.5s
+     => => sha256:71ddc29abe1f73926ad0922d41b7ad1942fda9be78eeb79f04dc872a10264b67 450B / 450B                                 0.7s
+     => => sha256:8e015de364a2eb2ed7c52a558e9f716dcb615560ffd132234087c10ccc1f2c63 1.43kB / 1.43kB                             0.0s
+     => => sha256:807e66e2bee193961c9642bb1157d77a61747bf76737ca786da45b10749dcb42 1.16kB / 1.16kB                             0.0s
+     => => extracting sha256:277539faec26519b55eba0f461b4c12fe4921eb031e80cef0a09b48592cb3eb8                                  1.8s
+     => => extracting sha256:2e04e6e2ab16e4be7fa7d604d5ab103338c4620ae546e46a6232bb40e718529c                                  0.1s
+     => => extracting sha256:71ddc29abe1f73926ad0922d41b7ad1942fda9be78eeb79f04dc872a10264b67                                  0.0s
+     => [frontend internal] load build context                                                                                 0.1s
+     => => transferring context: 818.12kB                                                                                      0.0s
+     => [frontend 2/6] WORKDIR /app                                                                                            0.7s
+     => [frontend 3/6] RUN npm install @vue/cli@5.0.8 -g                                                                      57.7s
+     => [frontend 4/6] COPY package.json .                                                                                     0.1s
+     => [frontend 5/6] COPY package-lock.json .                                                                                0.1s
+     => [frontend 6/6] RUN npm install                                                                                        13.0s
+     => [frontend] exporting to image                                                                                          3.3s
+     => => exporting layers                                                                                                    3.3s
+     => => writing image sha256:669b7b3220fb165a6e175a62d1df5ac85d46b9a1a2b240ecb0f66523fa22f1cd                               0.0s
+     => => naming to docker.io/library/fastapi-vue-frontend                                                                    0.0s
+    [+] Running 2/2
+     ✔ Container fastapi-vue-frontend-1  Started                                                                               2.7s
+     ✔ Container fastapi-vue-backend-1   Running                                                                               0.0s
+    sangbinlee9@master:~/fastapi-vue$
+
+
+
+![image](https://github.com/sangbinlee/install-docker-nginx/assets/4024414/50fed89e-4c63-4cc2-bd33-7f3cf8af4f4d)
+
+
+
+# mkdir postgres_data    
+#  docker-compose.yml:
+
+
+
+    
+    version: '3.8'
+    
+    services:
+    
+      backend:
+        build: ./services/backend
+        ports:
+          - 5000:5000
+        environment:
+          - DATABASE_URL=postgres://hello_fastapi:hello_fastapi@db:5432/hello_fastapi_dev
+        volumes:
+          - ./services/backend:/app
+        command: uvicorn src.main:app --reload --host 0.0.0.0 --port 5000
+        depends_on:
+          - db
+    
+      frontend:
+        build: ./services/frontend
+        volumes:
+          - './services/frontend:/app'
+          - '/app/node_modules'
+        ports:
+          - 8081:8081
+    
+      db:
+        image: postgres:latest
+        expose:
+          - 5432
+        environment:
+          - POSTGRES_USER=hello_fastapi
+          - POSTGRES_PASSWORD=hello_fastapi
+          - POSTGRES_DB=hello_fastapi_dev
+        volumes:
+          - ./postgres_data:/var/lib/postgresql/data/
+
+
+
+
+
+
+
+
+
+
 # 
 # 
 # 
