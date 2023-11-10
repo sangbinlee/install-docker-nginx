@@ -97,8 +97,24 @@ install-docker-nginx
 
 
 
-# 
-# 
+# sangbinlee9@master:~/fastapi-vue/services/backend/src$ vi main.py
+
+![image](https://github.com/sangbinlee/install-docker-nginx/assets/4024414/c718ac60-868e-4cb8-8c9f-fa782c51d22b)
+
+
+
+
+
+
+
+
+# http://192.168.0.65:5000/
+
+![image](https://github.com/sangbinlee/install-docker-nginx/assets/4024414/c4b731c9-5d48-4376-9513-be8747c36eb3)
+
+
+
+
 # 
 # 
 # 
