@@ -112,21 +112,61 @@ install-docker-nginx
 
 ![image](https://github.com/sangbinlee/install-docker-nginx/assets/4024414/c4b731c9-5d48-4376-9513-be8747c36eb3)
 
+![image](https://github.com/sangbinlee/install-docker-nginx/assets/4024414/4e183c0f-3d77-4ce2-84c7-0a0374cf35b5)
 
 
 
+# sudo apt install npm
+# npm install -g @vue/cli
 # 
 # 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
+#  sudo apt install nodejs
+# nodejs --version
+#  sudo apt install npm
+# npm --version
+# npm install vue@next
+# sudo npm install -g @vue/cli
+#  vue -V
+#  vue create frontend
+
+    
+    
+    
+    
+    sangbinlee9@master:~/fastapi-vue/services$ ll
+    total 16
+    drwxrwxr-x 4 sangbinlee9 sangbinlee9 4096 Nov 10 20:24 ./
+    drwxrwxr-x 4 sangbinlee9 sangbinlee9 4096 Nov 10 20:19 ../
+    drwxrwxr-x 3 sangbinlee9 sangbinlee9 4096 Nov 10 19:51 backend/
+    drwxrwxr-x 6 sangbinlee9 sangbinlee9 4096 Nov 10 20:25 frontend/
+    sangbinlee9@master:~/fastapi-vue/services$
+
+    
+    sangbinlee9@master:~/fastapi-vue/services$ cd frontend/
+    sangbinlee9@master:~/fastapi-vue/services/frontend$ ll
+    total 856
+    drwxrwxr-x   6 sangbinlee9 sangbinlee9   4096 Nov 10 20:25 ./
+    drwxrwxr-x   4 sangbinlee9 sangbinlee9   4096 Nov 10 20:24 ../
+    -rw-rw-r--   1 sangbinlee9 sangbinlee9     73 Nov 10 20:25 babel.config.js
+    drwxrwxr-x   7 sangbinlee9 sangbinlee9   4096 Nov 10 20:25 .git/
+    -rw-rw-r--   1 sangbinlee9 sangbinlee9    231 Nov 10 20:25 .gitignore
+    -rw-rw-r--   1 sangbinlee9 sangbinlee9    279 Nov 10 20:25 jsconfig.json
+    drwxrwxr-x 574 sangbinlee9 sangbinlee9  20480 Nov 10 20:25 node_modules/
+    -rw-rw-r--   1 sangbinlee9 sangbinlee9    884 Nov 10 20:25 package.json
+    -rw-rw-r--   1 sangbinlee9 sangbinlee9 808475 Nov 10 20:25 package-lock.json
+    drwxrwxr-x   2 sangbinlee9 sangbinlee9   4096 Nov 10 20:25 public/
+    -rw-rw-r--   1 sangbinlee9 sangbinlee9    320 Nov 10 20:25 README.md
+    drwxrwxr-x   4 sangbinlee9 sangbinlee9   4096 Nov 10 20:25 src/
+    -rw-rw-r--   1 sangbinlee9 sangbinlee9    118 Nov 10 20:25 vue.config.js
+    sangbinlee9@master:~/fastapi-vue/services/frontend$
+
+
+
+
+
+
+
+
 # 
 # 
 # 
