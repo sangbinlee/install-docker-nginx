@@ -2,8 +2,40 @@
 install-docker-nginx
 
 
-# 
-# 
+#  docker-compose up -d --build
+
+
+    
+    sangbinlee9@master:~/fastapi-vue$ docker-compose up -d --build
+    Command 'docker-compose' not found, but can be installed with:
+    sudo snap install docker          # version 20.10.24, or
+    sudo apt  install docker-compose  # version 1.29.2-1
+    See 'snap info docker' for additional versions.
+    sangbinlee9@master:~/fastapi-vue$ docker compose up -d --build
+    permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/json?all=1&filters=%7B%22label%22%3A%7B%22com.docker.compose.config-hash%22%3Atrue%2C%22com.docker.compose.project%3Dfastapi-vue%22%3Atrue%7D%7D": dial unix /var/run/docker.sock: connect: permission denied
+    
+
+    
+    sangbinlee9@master:~/fastapi-vue$ ls -al /var/run/docker.sock
+    srw-rw---- 1 root docker 0 Nov 10 19:23 /var/run/docker.sock
+
+
+
+
+
+# sudo chmod 666 /var/run/docker.sock
+
+    
+    sangbinlee9@master:~/fastapi-vue$ ls -al /var/run/docker.sock
+    srw-rw---- 1 root docker 0 Nov 10 19:23 /var/run/docker.sock
+    sangbinlee9@master:~/fastapi-vue$  sudo chmod 666 /var/run/docker.sock
+    [sudo] password for sangbinlee9:
+    sangbinlee9@master:~/fastapi-vue$ ls -al /var/run/docker.sock
+    srw-rw-rw- 1 root docker 0 Nov 10 19:23 /var/run/docker.sock
+
+
+
+
 # 
 # 
 # 
